@@ -4,18 +4,18 @@ Scroll through a selection of different cocktails, search for different cocktail
 
 ## Getting Started
 - Download the installer for Node LTS.
-- Install the ionic CLI globally: 'npm install -g ionic'
-- Clone this repository: (https://github.com/phanthomasL/Cocktail-app.git)
-- Run npm install from the project root.
-- Run ionic serve in a terminal from the project root.
+- Install the ionic CLI globally: `npm install -g ionic`
+- Clone this repository: `(https://github.com/phanthomasL/Cocktail-app.git)`
+- Run `npm install` from the project root.
+- Run `ionic serve` in a terminal from the project root.
 
 ## Deploying
  Progressive Web App
-- Run  'ionic build --prod'
-- Push the 'www' folder to your hosting service
+- Run  `ionic build --prod`
+- Push the `www` folder to your hosting service
 
 Android
-- Run 'ionic cordova run android --prod'
+- Run `ionic cordova run android --prod`
 
 iOS
-- Run 'ionic cordova run ios --prod'
+- Run `ionic cordova run ios --prod`
