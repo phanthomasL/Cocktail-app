@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-searchbar  placeholder="Cocktail name or ingridients"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+  
+  <ion-grid>
+    <ion-row *ngFor="let drink of cocktails.drinks">
+      <ion-col>
+      <ion-card padding-top="10">
+        <div>
+          <img alt="{{drink.strDrink}}" src="{{drink.strDrinkThumb}}" />
+        </div>
+        <ion-card-content class="ion-text-center">
+          <h2>{{drink.strDrink}}</h2>
+          <ion-text color="medium">
+            <div style="display: flex;" class="ion-justify-content-center">
+              <a [routerLink]="['../details', drink.idDrink]">Siehe Details</a>
+            </div>
+          </ion-text>
+        </ion-card-content>
+      </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
