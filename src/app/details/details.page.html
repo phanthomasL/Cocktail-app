@@ -3,6 +3,12 @@
     <ion-searchbar  placeholder="Cocktail name or ingridients"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
-<ion-content >
-{{drink}}
+<ion-content class="ion-padding">
+  <h1>{{drink.strDrink}}</h1>
+  <h2>Zutaten:</h2>
+  <p>{{getAllIngredientsByKey(drink)}}</p>
+  <h2>Anleitung:</h2>
+  <p>{{drink.strInstructionsDE}}</p>
+  <h2>Glass:</h2>
+  <p>{{drink.strGlass}}</p>
 </ion-content>

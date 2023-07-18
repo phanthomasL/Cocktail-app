@@ -11,7 +11,7 @@ import { Drink } from '../model/drink.model';
 })
 export class DetailsPage implements OnInit{
   id: string | null = null;
-  drink: Drink | null = null;
+  drink!: Drink;
 
   constructor(private cocktailService: CocktailService, private route: ActivatedRoute) {}
 
@@ -24,4 +24,12 @@ export class DetailsPage implements OnInit{
     }
   }
 
+  public getAllIngredientsByKey(drink: any): string {
+      let ingredients = '';
+      for(let i = 1; i <= 15; i++) {
+      let key = `strIngredient${i}`;
+      ingredients += drink[key] + ', ' ;
+  }
+  return ingredients;
+}
 }
