@@ -1,5 +1,6 @@
 # A little Cocktail App built with Ionic + Angular
 Scroll through a selection of different cocktails, search for different cocktails by name or ingredients. See how you can prepare the cocktails etc. or which glass you need. All with this one app
+-> TBD (no search at the momement)
 
 
 ## Getting Started
